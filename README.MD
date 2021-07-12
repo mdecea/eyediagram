@@ -1,8 +1,8 @@
-This repo is a fork of Warren Weckeser's 'eyediagram' repo [https://github.com/WarrenWeckesser/eyediagram].
+This repo is a fork of Warren Weckeser's `eyediagram` repo [https://github.com/WarrenWeckesser/eyediagram].
 
-Basically, it is just an updated version of his code (for instance, scipy's API has changed, and the function 'set_bg_color' - used in the original code - does not work anymore) with some small improvements and added functionality.
+Basically, it is just an updated version of his code (for instance, scipy's API has changed, and the function `set_bg_color` - used in the original code - does not work anymore) with some small improvements and added functionality.
 
-To build and install the package it is necessary to have cython and scipy installed. A common error when building the package is 'unable to find vcvarsall.bat'. You need to install the necessary Windows Compiler tools. For python 3.5 and later, you can install the latest version of Visual Studio and make sure that you include the "Python development workload" when selection what to install [https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/]. 
+To build and install the package it is necessary to have cython and scipy installed. A common error encountered when building the package is `unable to find vcvarsall.bat`. To solve it, you need to install the necessary Windows Compiler tools. For python 3.5 and later, you can install the latest version of Visual Studio and make sure that you include the "Python development workload" when selection what to install [https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/]. 
 
 --------------------------------------
 
