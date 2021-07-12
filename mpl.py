@@ -34,13 +34,13 @@ eyediagram_lines.__doc__ = eyediagram_lines.__doc__.replace("<common>",
                                                             _common_doc)
 
 
-def eyediagram(y, window_size, offset=0, colorbar=True, **imshowkwargs):
+def eyediagram(y, window_size, offset=0, diagram_pixel_size = (800, 640), colorbar=True, **imshowkwargs):
     """
     Plot an eye diagram using matplotlib by creating an image and calling
     the `imshow` function.
     <common>
     """
-    counts = _grid_count(y, window_size, offset, size = (200, 200))
+    counts = _grid_count(y, window_size, offset, diagram_pixel_size)
     counts = counts.astype(_np.float32)
     counts[counts == 0] = _np.nan
     ymax = y.max()
